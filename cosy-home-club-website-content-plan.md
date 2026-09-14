@@ -43,12 +43,18 @@ Every edition follows a fixed monthly cycle:
 
 **Price**: £34.99/month.
 
-**Cancellation**: members can cancel at any time. To avoid receiving (and
-being charged for) the following month's edition, cancellation must
-happen before the 16th — after that, renewal has already locked in and
-the next box will still ship. This is not "cancel anytime" in the sense
-of stopping the next shipment on demand; copy must reflect the 16th
-cutoff exactly, and must never say "cancel anytime" unqualified.
+**Billing**: the first edition is charged at sign-up. Every edition after
+that is charged automatically on the 16th of each month, for the
+following month's edition, until cancelled — the 16th is both the
+renewal-lock date and the charge date.
+
+**Cancellation**: members can cancel at any time. To avoid being charged
+for (and receiving) the following month's edition, cancellation must
+happen before the 16th — after that, renewal has already locked in, the
+charge has gone through, and the next box will still ship. This is not
+"cancel anytime" in the sense of stopping the next shipment on demand;
+copy must reflect the 16th cutoff exactly, and must never say "cancel
+anytime" unqualified.
 
 This cycle drives three distinct product states across the Shop and
 product pages — never a simple "buy / sold out" binary:
@@ -162,10 +168,12 @@ skip-a-month policy, cancellation.
 
 Sections:
 - The monthly cycle, step by step (opens/closes/locks/ships, matching §3)
-- Pricing — £34.99/month
+- Pricing & billing — £34.99/month; first edition charged at sign-up,
+  then automatically on the 16th of each month for the following
+  month's edition, until cancelled (see §3)
 - Skip-a-month policy — **TBC**, placeholder only, do not invent terms
 - Cancellation — cancel any time; cancel before the 16th to stop the
-  following month's edition (see §3)
+  following month's charge and edition (see §3)
 - Shipping — UK-only assumed, confirm; delivery window in the first week
   of the month
 - What you get each month — theme/mood/category-count framing only, no
@@ -191,8 +199,9 @@ Categories, with confirmed answers written and unconfirmed ones marked
 with a visible "answer pending" flag rather than invented copy:
 - Ordering & the monthly cycle — confirmed (cycle mechanics, sell-out
   behaviour)
-- Pricing & billing — price confirmed (£34.99/month); billing timing and
-  multi-month discount pending
+- Pricing & billing — price and billing timing confirmed (£34.99/month,
+  charged at sign-up then on the 16th of each month); multi-month
+  discount pending
 - Skipping / pausing / cancelling — cancellation confirmed (see §3);
   skip-a-month policy and refunds on a locked order pending
 - Shipping & delivery — ship timing confirmed (first week of the month);
