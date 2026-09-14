@@ -187,13 +187,17 @@ FAQ).
 
 ### 6.3 About
 
-**Purpose**: brand story, warm and plain, no corporate tone.
+**Purpose**: brand story, warm and plain, no corporate tone. See
+`about-page-mockup.html` for layout reference.
 
 Sections:
-- Origin story / why Cosy Home Club exists
-- Values (considered, seasonal, no clutter — tone-match brand voice)
-- Small team/founder note if applicable (**content TBC** — no bios
-  drafted without input)
+- Origin story / why Cosy Home Club exists — draft copy written, kept
+  general (no fabricated operational claims — sourcing process, team
+  size, specific dates); review and adjust to taste
+- Values — three: considered, seasonal, no clutter, each with a short
+  line of copy
+- Team/founder note — **content TBC**, laid out as a placeholder section
+  with a visible "content pending" flag; no bios drafted without input
 
 ### 6.4 FAQ
 
