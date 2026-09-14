@@ -120,15 +120,20 @@ omission — copy review should flag any accidental specificity.
 
 1. Home (`/`)
 2. Shop / current edition product page (`/products/[handle]`)
-3. How membership works (`/how-it-works`)
-4. About (`/about`)
-5. FAQ (`/faq`)
-6. Contact (`/contact`)
-7. Legal (placeholder pages, real copy TBC):
+3. About (`/about`)
+4. FAQ (`/faq`)
+5. Contact (`/contact`)
+6. Legal (placeholder pages, real copy TBC):
    - Terms of service (`/legal/terms`)
    - Privacy policy (`/legal/privacy`)
    - Shipping & returns (`/legal/shipping-returns`)
    - Subscription/cancellation terms (`/legal/subscription-terms`)
+
+**Cut from the original plan**: a dedicated "How membership works" page.
+The cycle mechanics are fully covered by the Shop page's accordion, the
+Home page's condensed cycle strip, and the FAQ's "Ordering & the
+monthly cycle" category — a fourth restatement added nothing. Links
+that would have pointed there now point to the FAQ instead.
 
 ## 6. Page-by-page requirements
 
@@ -148,12 +153,12 @@ Sections:
   no-reference-to-the-closed-edition rule). No accordion — a "see full
   details & how it works" link goes to the product page for that.
 - How the cycle moves, condensed — the same 4-step strip as the product
-  page (opens/closes/locks/ships), links to How membership works for
-  the full breakdown
+  page (opens/closes/locks/ships), links to the FAQ's "Ordering & the
+  monthly cycle" category for more
 - Brand story snippet — short, warm, 2–3 sentences, links to About
 - Trust / reassurance row — no long tie-in, delivered across the UK &amp;
-  Ireland, links to the cancelling detail on How membership works rather
-  than stating the 16th cutoff inline
+  Ireland, links to the FAQ's cancelling detail rather than stating the
+  16th cutoff inline
 - General newsletter signup ("stay in the loop") — always available,
   distinct in purpose from the state-driven "notify me" capture inside
   the subscribe section (sold out / closed states only)
@@ -180,29 +185,7 @@ full page), what "five considered pieces" means without specifics,
 shipping note, FAQ snippet (2–3 most relevant questions, links to full
 FAQ).
 
-### 6.3 How membership works
-
-**Purpose**: explain the mechanics in full — the cycle, pricing logic,
-skip-a-month policy, cancellation.
-
-Sections:
-- The monthly cycle, step by step (opens/closes/locks/ships, matching §3)
-- Pricing & billing — £34.99/month; first edition charged at sign-up,
-  then automatically on the 16th of each month for the following
-  month's edition, until cancelled; no multi-month discount, but
-  `WELCOME10` gives 10% off a first box (see §3)
-- Skip-a-month policy — not offered; cancel before the 16th and
-  resubscribe when ready is the only way to miss an edition (see §3)
-- Cancellation — cancel any time; cancel before the 16th to stop the
-  following month's charge and edition; cancelling after the 16th does
-  not refund the box already locked in, but stops billing after that
-  (see §3)
-- Shipping — UK and Ireland only; delivery window in the first week of
-  the month
-- What you get each month — theme/mood/category-count framing only, no
-  content specifics
-
-### 6.4 About
+### 6.3 About
 
 **Purpose**: brand story, warm and plain, no corporate tone.
 
@@ -212,7 +195,7 @@ Sections:
 - Small team/founder note if applicable (**content TBC** — no bios
   drafted without input)
 
-### 6.5 FAQ
+### 6.4 FAQ
 
 **Purpose**: answer practical questions, reduce support load. See
 `faq-page-mockup.html` for layout reference — category jump nav, an
@@ -237,7 +220,7 @@ were still open):
 - What's actually inside (mystery-rule-compliant answer — confirms the
   surprise, states category count only)
 
-### 6.6 Contact
+### 6.5 Contact
 
 **Purpose**: simple contact path.
 
@@ -246,7 +229,7 @@ Sections:
 - Response-time expectation (plain, no urgency language)
 - Link back to FAQ for common questions
 
-### 6.7 Legal (placeholders)
+### 6.6 Legal (placeholders)
 
 Stub pages with headings and "coming soon" or lorem-structure content
 until real legal copy is supplied. Do not draft binding legal terms.
