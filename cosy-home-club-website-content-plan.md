@@ -1,8 +1,10 @@
 # Cosy Home Club — website content plan
 
-Status: draft v1. Items marked **TBC** are placeholders pending confirmation
-(capacity numbers, skip-a-month policy) — do not treat these as final copy
-or launch content. Price and cancellation terms are confirmed (see §3).
+Status: draft v1. Items marked **TBC** are placeholders pending
+confirmation (capacity numbers, the About page team/founder note, and
+real legal copy) — do not treat these as final copy or launch content.
+Price, billing, cancellation, discount, skip-a-month, shipping, returns
+and contact method are all confirmed (see §3 and §6).
 
 ## 1. Overview
 
@@ -54,7 +56,17 @@ happen before the 16th — after that, renewal has already locked in, the
 charge has gone through, and the next box will still ship. This is not
 "cancel anytime" in the sense of stopping the next shipment on demand;
 copy must reflect the 16th cutoff exactly, and must never say "cancel
-anytime" unqualified.
+anytime" unqualified. Cancelling after the 16th does not refund the
+edition that's already locked in and charged — that box still ships —
+but it does stop billing for the edition after that.
+
+**Shipping**: the UK and Ireland only.
+
+**Returns**: no returns offered. Members are encouraged to share
+feedback instead — if unhappy with a piece, contact
+`hello@cosyhomeclub.co.uk`.
+
+**Contact**: email only (`hello@cosyhomeclub.co.uk`), no contact form.
 
 **Discount**: no multi-month or subscription-length discount. New
 members get 10% off their first box with the code `WELCOME10`.
@@ -139,9 +151,9 @@ Sections:
   page (opens/closes/locks/ships), links to How membership works for
   the full breakdown
 - Brand story snippet — short, warm, 2–3 sentences, links to About
-- Trust / reassurance row — no long tie-in, UK-based, links to the
-  cancelling detail on How membership works rather than stating the
-  16th cutoff inline
+- Trust / reassurance row — no long tie-in, delivered across the UK &amp;
+  Ireland, links to the cancelling detail on How membership works rather
+  than stating the 16th cutoff inline
 - General newsletter signup ("stay in the loop") — always available,
   distinct in purpose from the state-driven "notify me" capture inside
   the subscribe section (sold out / closed states only)
@@ -182,9 +194,11 @@ Sections:
 - Skip-a-month policy — not offered; cancel before the 16th and
   resubscribe when ready is the only way to miss an edition (see §3)
 - Cancellation — cancel any time; cancel before the 16th to stop the
-  following month's charge and edition (see §3)
-- Shipping — UK-only assumed, confirm; delivery window in the first week
-  of the month
+  following month's charge and edition; cancelling after the 16th does
+  not refund the box already locked in, but stops billing after that
+  (see §3)
+- Shipping — UK and Ireland only; delivery window in the first week of
+  the month
 - What you get each month — theme/mood/category-count framing only, no
   content specifics
 
@@ -204,19 +218,22 @@ Sections:
 `faq-page-mockup.html` for layout reference — category jump nav, an
 accordion per question, and a contact CTA at the bottom.
 
-Categories, with confirmed answers written and unconfirmed ones marked
-with a visible "answer pending" flag rather than invented copy:
-- Ordering & the monthly cycle — confirmed (cycle mechanics, sell-out
-  behaviour)
-- Pricing & billing — price, billing timing and discount policy
-  confirmed (£34.99/month, charged at sign-up then on the 16th of each
-  month, no multi-month discount, `WELCOME10` for 10% off a first box)
-- Skipping / pausing / cancelling — cancellation and skip policy
-  confirmed (no skip; cancel and resubscribe instead, see §3); refunds
-  on a locked order still pending
-- Shipping & delivery — ship timing confirmed (first week of the month);
-  delivery region pending
-- Returns
+All six categories are now fully confirmed (methodology for any future
+unanswered question: mark it with a visible "answer pending" flag rather
+than inventing copy, as this page did while pricing/shipping/returns
+were still open):
+- Ordering & the monthly cycle — cycle mechanics, sell-out behaviour
+- Pricing & billing — £34.99/month, charged at sign-up then on the 16th
+  of each month, no multi-month discount, `WELCOME10` for 10% off a
+  first box
+- Skipping / pausing / cancelling — no skip (cancel and resubscribe
+  instead); cancel before the 16th to avoid the next charge; cancelling
+  after the 16th bills and ships that locked-in box but not the one
+  after
+- Shipping & delivery — UK and Ireland only, ships first week of the
+  month
+- Returns — none offered; direct unhappy members to
+  `hello@cosyhomeclub.co.uk` for feedback instead
 - What's actually inside (mystery-rule-compliant answer — confirms the
   surprise, states category count only)
 
@@ -225,7 +242,7 @@ with a visible "answer pending" flag rather than invented copy:
 **Purpose**: simple contact path.
 
 Sections:
-- Contact form (name, email, message) or mailto — **method TBC**
+- Email only, via `mailto:hello@cosyhomeclub.co.uk` — no contact form
 - Response-time expectation (plain, no urgency language)
 - Link back to FAQ for common questions
 
@@ -237,13 +254,6 @@ until real legal copy is supplied. Do not draft binding legal terms.
 ## 7. Open questions — confirm before finalising copy
 
 - **Capacity numbers**: units per edition that trigger "sold out" state.
-- **Refunds on a locked order**: whether a member who cancels after the
-  16th (once that month's renewal is locked and charged) is entitled to
-  a refund on the box that still ships, or only stops future renewals.
-- **Returns policy**: terms for returning a piece from a delivered box.
-- **Shipping scope**: UK-only confirmed? Any excluded regions
-  (Highlands/Islands, NI)?
-- **Contact method**: form vs. mailto vs. both.
 - **About page team/founder note**: any bio or "who's behind this"
   content, or leave it out entirely.
 - **Legal pages**: real copy for terms, privacy, shipping & returns, and
