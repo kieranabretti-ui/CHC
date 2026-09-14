@@ -1,8 +1,8 @@
 # Cosy Home Club — website content plan
 
 Status: draft v1. Items marked **TBC** are placeholders pending confirmation
-(pricing, capacity numbers, skip-a-month policy) — do not treat these as
-final copy or launch content.
+(capacity numbers, skip-a-month policy) — do not treat these as final copy
+or launch content. Price and cancellation terms are confirmed (see §3).
 
 ## 1. Overview
 
@@ -40,6 +40,15 @@ Every edition follows a fixed monthly cycle:
    *following* month's edition, and Cosy Home Club finalises stock and
    production against confirmed orders.
 4. **Ships** in the first week of the following month.
+
+**Price**: £34.99/month.
+
+**Cancellation**: members can cancel at any time. To avoid receiving (and
+being charged for) the following month's edition, cancellation must
+happen before the 16th — after that, renewal has already locked in and
+the next box will still ship. This is not "cancel anytime" in the sense
+of stopping the next shipment on demand; copy must reflect the 16th
+cutoff exactly, and must never say "cancel anytime" unqualified.
 
 This cycle drives three distinct product states across the Shop and
 product pages — never a simple "buy / sold out" binary:
@@ -110,8 +119,8 @@ Sections:
 - Current edition teaser — theme name/mood only, respects state logic
   above, links to product page
 - Brand story snippet — short, warm, 2–3 sentences, links to About
-- Trust / reassurance row — cancel anytime, no long tie-in (exact terms
-  **TBC**), UK-based
+- Trust / reassurance row — cancel any time, no long tie-in, cancel
+  before the 16th to stop next month's edition, UK-based
 - Email capture (always available, not just in closed state)
 - Footer nav to all pages + legal
 
@@ -122,9 +131,10 @@ logic in §3. See `product-page-mockup.html` for layout reference.
 
 Content per state:
 - **Open**: theme name/mood, "five considered pieces, one seasonal
-  theme"-style category count, price (**TBC**), cadence note ("ships
-  monthly, cancel anytime" — cancellation terms **TBC**), capacity
-  remaining if shown, primary CTA to subscribe via Shopify selling plan.
+  theme"-style category count, price (£34.99/month), cadence note
+  ("ships monthly, first week of the month · cancel before the 16th to
+  stop next month's edition"), capacity remaining if shown, primary CTA
+  to subscribe via Shopify selling plan.
 - **Sold out**: same theme framing, no CTA, plain "this edition is full"
   statement, email capture for next edition.
 - **Closed between editions**: forward-looking copy per §3 exactly, email
@@ -142,10 +152,12 @@ skip-a-month policy, cancellation.
 
 Sections:
 - The monthly cycle, step by step (opens/closes/locks/ships, matching §3)
-- Pricing — **TBC**, placeholder only
+- Pricing — £34.99/month
 - Skip-a-month policy — **TBC**, placeholder only, do not invent terms
-- Cancellation — **TBC**
-- Shipping — UK-only assumed, confirm; delivery window after the 1st
+- Cancellation — cancel any time; cancel before the 16th to stop the
+  following month's edition (see §3)
+- Shipping — UK-only assumed, confirm; delivery window in the first week
+  of the month
 - What you get each month — theme/mood/category-count framing only, no
   content specifics
 
@@ -163,8 +175,8 @@ Sections:
 
 **Purpose**: answer practical questions, reduce support load.
 
-Suggested categories (content **TBC** pending pricing/policy
-confirmation):
+Suggested categories (content **TBC** pending skip-a-month policy
+confirmation; pricing and cancellation are confirmed, see §3):
 - Ordering & the monthly cycle
 - Pricing & billing
 - Skipping / pausing / cancelling
@@ -189,12 +201,14 @@ until real legal copy is supplied. Do not draft binding legal terms.
 
 ## 7. Open questions — confirm before finalising copy
 
-- **Pricing**: per-edition price, any multi-month discount.
+- **Multi-month discount**: any discount for paying/committing across
+  multiple months (price itself is confirmed at £34.99/month).
 - **Capacity numbers**: units per edition that trigger "sold out" state.
 - **Skip-a-month policy**: mechanics, deadline relative to the 15th
   cutoff, any limits per year.
-- **Cancellation terms**: notice period, refund policy on a locked
-  (post-16th) order.
+- **Refunds on a locked order**: whether a member who cancels after the
+  16th (once that month's renewal is locked) is entitled to a refund on
+  the box that still ships, or only stops future renewals.
 - **Shipping scope**: UK-only confirmed? Any excluded regions
   (Highlands/Islands, NI)?
 - **Contact method**: form vs. mailto vs. both.
