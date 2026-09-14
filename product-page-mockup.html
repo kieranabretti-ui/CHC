@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Product page mockup — Cosy Home Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Jost:wght@300;400;500;600&family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --cream: #FAF6F0;
+    --stone: #DCC9B6;
+    --latte: #B98D75;
+    --latte-deep: #8C6A54;
+    --espresso: #3A342E;
+    --line: #E4D9CB;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--espresso);
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    margin: 0;
+    color: var(--espresso);
+  }
+
+  .accent {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--latte-deep);
+  }
+
+  a { color: var(--latte-deep); }
+
+  .wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ---------- mockup-only preview switcher (not final page chrome) ---------- */
+  .mockup-note {
+    background: var(--espresso);
+    color: var(--cream);
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 16px;
+  }
+  .state-switcher {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px 16px;
+    background: var(--stone);
+    border-bottom: 1px solid var(--line);
+  }
+  .state-switcher button {
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--latte-deep);
+    background: transparent;
+    color: var(--espresso);
+    cursor: pointer;
+  }
+  .state-switcher button.active {
+    background: var(--latte-deep);
+    color: var(--cream);
+  }
+
+  /* ---------- header ---------- */
+  header.site {
+    border-bottom: 1px solid var(--line);
+    padding: 20px 0;
+  }
+  header.site .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+  }
+  nav.primary {
+    display: flex;
+    gap: 28px;
+    font-size: 14px;
+  }
+  nav.primary a { text-decoration: none; color: var(--espresso); }
+  .cart-icon { font-size: 14px; }
+
+  /* ---------- breadcrumb ---------- */
+  .breadcrumb {
+    font-size: 13px;
+    padding: 18px 0 0;
+    color: var(--latte-deep);
+  }
+  .breadcrumb a { text-decoration: none; }
+
+  /* ---------- product layout ---------- */
+  .product {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 56px;
+    padding: 32px 0 64px;
+    align-items: start;
+  }
+  @media (max-width: 860px) {
+    .product { grid-template-columns: 1fr; gap: 32px; }
+  }
+
+  .gallery-main {
+    aspect-ratio: 4 / 5;
+    background: var(--stone);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--latte-deep);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+  }
+  .gallery-thumbs {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .gallery-thumbs div {
+    flex: 1;
+    aspect-ratio: 1 / 1;
+    background: var(--cream);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+
+  .eyebrow {
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .product-info h1 {
+    font-size: 34px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .meta-line {
+    font-size: 14px;
+    color: var(--latte-deep);
+    margin-bottom: 20px;
+  }
+
+  .price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 4px;
+  }
+  .price {
+    font-family: 'Fraunces', serif;
+    font-size: 26px;
+  }
+  .cadence {
+    font-size: 13px;
+    color: var(--latte-deep);
+  }
+  .tbc {
+    font-size: 11px;
+    border: 1px dashed var(--latte);
+    padding: 1px 6px;
+    border-radius: 3px;
+    color: var(--latte-deep);
+  }
+
+  .description {
+    margin: 20px 0;
+    font-size: 15px;
+  }
+
+  /* ---------- state panels ---------- */
+  .state-panel {
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px;
+    margin: 24px 0;
+    background: #fff;
+  }
+
+  .capacity-note {
+    font-size: 13px;
+    color: var(--latte-deep);
+    margin-bottom: 14px;
+  }
+
+  .btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: 4px;
+    font-size: 15px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+  }
+  .btn-primary {
+    background: var(--latte-deep);
+    color: var(--cream);
+  }
+  .btn-disabled {
+    background: var(--stone);
+    color: var(--espresso);
+    cursor: not-allowed;
+  }
+
+  .state-message {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  .email-capture {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  @media (max-width: 480px) {
+    .email-capture { flex-direction: column; }
+  }
+  .email-capture input {
+    flex: 1;
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    background: var(--cream);
+    color: var(--espresso);
+  }
+  .email-capture button {
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: none;
+    background: var(--latte-deep);
+    color: var(--cream);
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  /* ---------- accordion ---------- */
+  .details {
+    border-top: 1px solid var(--line);
+    margin-top: 24px;
+  }
+  .details-item {
+    border-bottom: 1px solid var(--line);
+    padding: 16px 0;
+  }
+  .details-item summary {
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Fraunces', serif;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .details-item summary::-webkit-details-marker { display: none; }
+  .details-item summary::after {
+    content: "+";
+    color: var(--latte-deep);
+  }
+  .details-item[open] summary::after { content: "–"; }
+  .details-item p {
+    font-size: 14px;
+    margin: 12px 0 0;
+    color: var(--espresso);
+  }
+
+  /* ---------- cycle strip ---------- */
+  .cycle-strip {
+    background: var(--stone);
+    padding: 40px 0;
+    margin-top: 24px;
+  }
+  .cycle-strip h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  .cycle-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  @media (max-width: 700px) {
+    .cycle-steps { grid-template-columns: 1fr 1fr; }
+  }
+  .cycle-step {
+    text-align: center;
+    font-size: 13px;
+  }
+  .cycle-step .num {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    color: var(--latte-deep);
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  footer.site {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 13px;
+    color: var(--latte-deep);
+  }
+</style>
+</head>
+<body>
+
+<div class="mockup-note">
+  Mockup preview only — the buttons below switch between the three product
+  states for design reference. They are not part of the final page.
+</div>
+<div class="state-switcher">
+  <button class="state-active-trigger active" data-state="open">1 · Open</button>
+  <button class="state-active-trigger" data-state="sold-out">2 · Sold out</button>
+  <button class="state-active-trigger" data-state="closed">3 · Closed between editions</button>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <div class="logo">Cosy Home Club</div>
+    <nav class="primary">
+      <a href="#">Shop</a>
+      <a href="#">How it works</a>
+      <a href="#">About</a>
+      <a href="#">FAQ</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="cart-icon">Cart (0)</div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="breadcrumb"><a href="#">Shop</a> / This month's edition</div>
+
+  <div class="product">
+    <div class="gallery">
+      <div class="gallery-main">Edition imagery<br />(placeholder)</div>
+      <div class="gallery-thumbs">
+        <div></div><div></div><div></div><div></div>
+      </div>
+    </div>
+
+    <div class="product-info">
+      <span class="eyebrow accent">This month's edition</span>
+      <h1>The quiet hours edition</h1>
+      <div class="meta-line">Five considered pieces · one seasonal theme</div>
+
+      <div class="price-row">
+        <span class="price">£XX / month</span>
+        <span class="tbc">price TBC</span>
+      </div>
+      <div class="cadence">Ships monthly · cancel anytime</div>
+
+      <p class="description">
+        A slow, settling theme for the start of the season — five pieces
+        chosen to bring a little more calm into the everyday spaces of
+        your home. What's inside stays a surprise until it arrives; all
+        we'll say here is the mood and the count.
+      </p>
+
+      <!-- STATE 1: OPEN -->
+      <div class="state-panel" data-panel="open">
+        <div class="capacity-note">Open for orders · spaces remaining</div>
+        <button class="btn btn-primary">Join this edition — £XX/month</button>
+      </div>
+
+      <!-- STATE 2: SOLD OUT -->
+      <div class="state-panel" data-panel="sold-out" style="display:none;">
+        <p class="state-message">
+          This edition is full. Pop your email below and we'll let you
+          know as soon as the next one opens.
+        </p>
+        <div class="email-capture">
+          <input type="email" placeholder="Your email address" />
+          <button>Notify me</button>
+        </div>
+      </div>
+
+      <!-- STATE 3: CLOSED BETWEEN EDITIONS -->
+      <div class="state-panel" data-panel="closed" style="display:none;">
+        <p class="state-message">
+          This edition is now closed. The next edition opens on the 1st
+          of <span class="next-month">November</span>. Pop your email
+          below and we'll let you know the moment it's live.
+        </p>
+        <div class="email-capture">
+          <input type="email" placeholder="Your email address" />
+          <button>Notify me</button>
+        </div>
+      </div>
+
+      <div class="details">
+        <details class="details-item">
+          <summary>How the monthly cycle works</summary>
+          <p>Each edition opens on the 1st, orders close on the 15th, and
+          boxes ship on the 1st of the following month. <a href="#">Read
+          the full breakdown</a>.</p>
+        </details>
+        <details class="details-item">
+          <summary>What's inside</summary>
+          <p>Five considered pieces built around one seasonal theme.
+          Contents stay a surprise until your box arrives — that's part
+          of the fun.</p>
+        </details>
+        <details class="details-item">
+          <summary>Skipping a month</summary>
+          <p>Skip-a-month details TBC.</p>
+        </details>
+        <details class="details-item">
+          <summary>Shipping</summary>
+          <p>Shipping details TBC.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cycle-strip">
+  <div class="wrap">
+    <h2>How each edition moves</h2>
+    <div class="cycle-steps">
+      <div class="cycle-step"><span class="num">1st</span>Edition opens</div>
+      <div class="cycle-step"><span class="num">15th</span>Orders close</div>
+      <div class="cycle-step"><span class="num">16th</span>Renewal locks in</div>
+      <div class="cycle-step"><span class="num">1st</span>Ships next month</div>
+    </div>
+  </div>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    Cosy Home Club — a UK monthly home-styling membership.
+    <br />
+    <a href="#">Terms</a> · <a href="#">Privacy</a> · <a href="#">Shipping &amp; returns</a>
+  </div>
+</footer>
+
+<script>
+  var buttons = document.querySelectorAll('.state-active-trigger');
+  var panels = document.querySelectorAll('.state-panel');
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      buttons.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var state = btn.getAttribute('data-state');
+      panels.forEach(function (p) {
+        p.style.display = (p.getAttribute('data-panel') === state) ? 'block' : 'none';
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
