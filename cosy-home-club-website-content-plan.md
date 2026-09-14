@@ -56,6 +56,13 @@ charge has gone through, and the next box will still ship. This is not
 copy must reflect the 16th cutoff exactly, and must never say "cancel
 anytime" unqualified.
 
+**Discount**: no multi-month or subscription-length discount. New
+members get 10% off their first box with the code `WELCOME10`.
+
+**Skipping a month**: not currently offered. The workaround is to cancel
+before the 16th and resubscribe whenever ready to start again — this is
+not a formal "skip" feature and shouldn't be described as one.
+
 This cycle drives three distinct product states across the Shop and
 product pages — never a simple "buy / sold out" binary:
 
@@ -170,8 +177,10 @@ Sections:
 - The monthly cycle, step by step (opens/closes/locks/ships, matching §3)
 - Pricing & billing — £34.99/month; first edition charged at sign-up,
   then automatically on the 16th of each month for the following
-  month's edition, until cancelled (see §3)
-- Skip-a-month policy — **TBC**, placeholder only, do not invent terms
+  month's edition, until cancelled; no multi-month discount, but
+  `WELCOME10` gives 10% off a first box (see §3)
+- Skip-a-month policy — not offered; cancel before the 16th and
+  resubscribe when ready is the only way to miss an edition (see §3)
 - Cancellation — cancel any time; cancel before the 16th to stop the
   following month's charge and edition (see §3)
 - Shipping — UK-only assumed, confirm; delivery window in the first week
@@ -199,11 +208,12 @@ Categories, with confirmed answers written and unconfirmed ones marked
 with a visible "answer pending" flag rather than invented copy:
 - Ordering & the monthly cycle — confirmed (cycle mechanics, sell-out
   behaviour)
-- Pricing & billing — price and billing timing confirmed (£34.99/month,
-  charged at sign-up then on the 16th of each month); multi-month
-  discount pending
-- Skipping / pausing / cancelling — cancellation confirmed (see §3);
-  skip-a-month policy and refunds on a locked order pending
+- Pricing & billing — price, billing timing and discount policy
+  confirmed (£34.99/month, charged at sign-up then on the 16th of each
+  month, no multi-month discount, `WELCOME10` for 10% off a first box)
+- Skipping / pausing / cancelling — cancellation and skip policy
+  confirmed (no skip; cancel and resubscribe instead, see §3); refunds
+  on a locked order still pending
 - Shipping & delivery — ship timing confirmed (first week of the month);
   delivery region pending
 - Returns
@@ -226,14 +236,15 @@ until real legal copy is supplied. Do not draft binding legal terms.
 
 ## 7. Open questions — confirm before finalising copy
 
-- **Multi-month discount**: any discount for paying/committing across
-  multiple months (price itself is confirmed at £34.99/month).
 - **Capacity numbers**: units per edition that trigger "sold out" state.
-- **Skip-a-month policy**: mechanics, deadline relative to the 15th
-  cutoff, any limits per year.
 - **Refunds on a locked order**: whether a member who cancels after the
-  16th (once that month's renewal is locked) is entitled to a refund on
-  the box that still ships, or only stops future renewals.
+  16th (once that month's renewal is locked and charged) is entitled to
+  a refund on the box that still ships, or only stops future renewals.
+- **Returns policy**: terms for returning a piece from a delivered box.
 - **Shipping scope**: UK-only confirmed? Any excluded regions
   (Highlands/Islands, NI)?
 - **Contact method**: form vs. mailto vs. both.
+- **About page team/founder note**: any bio or "who's behind this"
+  content, or leave it out entirely.
+- **Legal pages**: real copy for terms, privacy, shipping & returns, and
+  subscription terms (placeholders only for now, not blocking).
