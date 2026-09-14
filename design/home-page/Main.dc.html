@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Jost:wght@300;400;500;600&family=Cormorant+Garamond:ital@1&display=swap');
+
+    :root {
+      --cream: #FAF6F0;
+      --stone: #DCC9B6;
+      --latte: #B98D75;
+      --latte-deep: #8C6A54;
+      --espresso: #3A342E;
+      --line: #E4D9CB;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .page {
+      background: var(--cream);
+      color: var(--espresso);
+      font-family: 'Jost', sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+    h1, h2, h3 { font-family: 'Fraunces', serif; font-weight: 500; margin: 0; color: var(--espresso); }
+    .accent { font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--latte-deep); }
+    a { color: var(--latte-deep); text-decoration: none; }
+    a:hover { color: var(--espresso); }
+    p { margin: 0; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+
+    header.site { border-bottom: 1px solid var(--line); padding: 20px 0; }
+    header.site .row { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-family: 'Fraunces', serif; font-size: 20px; letter-spacing: 0.02em; }
+    nav.primary { display: flex; gap: 28px; font-size: 14px; }
+    .cart-icon { font-size: 14px; }
+
+    .hero { padding: 72px 0 56px; text-align: center; }
+    .hero .eyebrow { display: block; font-size: 17px; margin-bottom: 14px; }
+    .hero h1 { font-size: 42px; line-height: 1.2; max-width: 680px; margin: 0 auto 18px; text-wrap: balance; }
+    .hero p { font-size: 16px; max-width: 520px; margin: 0 auto 28px; }
+
+    .btn { display: inline-block; text-align: center; padding: 14px 28px; border-radius: 4px; font-size: 15px; border: none; cursor: pointer; font-family: 'Jost', sans-serif; background: var(--latte-deep); color: var(--cream); }
+    .btn-block { display: block; width: 100%; }
+
+    section.block { padding: 56px 0; }
+    .section-heading { text-align: center; margin-bottom: 36px; }
+    .section-heading .eyebrow { display: block; font-size: 15px; margin-bottom: 8px; }
+    .section-heading h2 { font-size: 26px; }
+
+    .subscribe-section { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .mini-product { max-width: 860px; margin: 0 auto; display: flex; gap: 36px; align-items: flex-start; }
+    .mini-gallery-col { flex: 0 0 340px; }
+    .mini-info { flex: 1 1 auto; }
+
+    .mini-gallery { aspect-ratio: 4 / 3; background: var(--stone); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+    .mini-gallery svg { width: 100%; height: 100%; display: block; }
+    .gallery-caption { display: block; text-align: center; font-size: 13px; margin-top: 10px; }
+
+    .mini-info .eyebrow { font-size: 14px; margin-bottom: 8px; display: block; }
+    .mini-info h3 { font-size: 24px; line-height: 1.2; margin-bottom: 8px; }
+    .mini-meta { font-size: 13px; color: var(--latte-deep); margin-bottom: 16px; }
+    .mini-price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 2px; }
+    .mini-price { font-family: 'Fraunces', serif; font-size: 22px; }
+    .mini-cadence { font-size: 13px; color: var(--latte-deep); }
+    .mini-discount-note { font-size: 13px; color: var(--latte-deep); margin-bottom: 18px; }
+    .mini-discount-note strong { color: var(--espresso); }
+
+    .state-panel { border: 1px solid var(--line); border-radius: 6px; padding: 18px; background: var(--cream); }
+    .capacity-note { font-size: 13px; color: var(--latte-deep); margin-bottom: 12px; }
+    .state-message { font-size: 14px; margin-bottom: 14px; }
+
+    .email-capture { display: flex; gap: 8px; }
+    .email-capture input { flex: 1; padding: 12px 14px; border: 1px solid var(--line); border-radius: 4px; font-family: 'Jost', sans-serif; font-size: 14px; background: #fff; color: var(--espresso); }
+    .email-capture button { padding: 12px 20px; border-radius: 4px; border: none; background: var(--latte-deep); color: var(--cream); font-family: 'Jost', sans-serif; font-size: 14px; cursor: pointer; white-space: nowrap; }
+
+    .see-details { display: block; text-align: center; font-size: 13px; margin-top: 14px; }
+
+    .cycle-strip { background: var(--stone); }
+    .cycle-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 780px; margin: 0 auto; }
+    .cycle-step { text-align: center; font-size: 13px; }
+    .cycle-step .num { font-family: 'Fraunces', serif; font-size: 22px; color: var(--latte-deep); display: block; margin-bottom: 6px; }
+    .cycle-more { text-align: center; margin-top: 28px; font-size: 13px; }
+
+    .story { max-width: 600px; margin: 0 auto; text-align: center; }
+    .story p { font-size: 16px; margin-bottom: 14px; }
+    .story a { font-size: 14px; }
+
+    .trust-row { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; text-align: center; font-size: 14px; color: var(--latte-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 28px 0; }
+
+    .newsletter { text-align: center; }
+    .newsletter h2 { font-size: 22px; margin-bottom: 10px; }
+    .newsletter p { font-size: 14px; margin-bottom: 20px; }
+    .newsletter .email-capture { max-width: 400px; margin: 0 auto; }
+
+    footer.site { padding: 40px 0; text-align: center; font-size: 13px; color: var(--latte-deep); }
+  </style>
+</helmet>
+
+<div class="page">
+
+  <header class="site">
+    <div class="wrap row">
+      <div class="logo">Cosy Home Club</div>
+      <nav class="primary">
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="cart-icon">Cart (0)</div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow accent">A monthly home-styling membership</span>
+      <h1>A little more considered, every month</h1>
+      <p>Five pieces, one seasonal theme, chosen for your home and kept a secret until they arrive.</p>
+      <a href="#subscribe" class="btn">See this month's edition</a>
+    </div>
+  </section>
+
+  <section class="subscribe-section block">
+    <div class="wrap">
+      <div class="section-heading">
+        <span class="eyebrow accent">Join now</span>
+        <h2>This month's edition</h2>
+      </div>
+
+      <div class="mini-product">
+        <div class="mini-gallery-col">
+          <div class="mini-gallery">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a wrapped Cosy Home Club box">
+              <ellipse cx="200" cy="256" rx="108" ry="14" fill="#3A342E" opacity="0.12"></ellipse>
+              <rect x="96" y="126" width="208" height="118" rx="6" fill="#B98D75"></rect>
+              <rect x="96" y="126" width="208" height="118" rx="6" fill="none" stroke="#8C6A54" stroke-opacity="0.25" stroke-width="1"></rect>
+              <line x1="96" y1="152" x2="304" y2="152" stroke="#8C6A54" stroke-opacity="0.18" stroke-width="1"></line>
+              <line x1="96" y1="178" x2="304" y2="178" stroke="#8C6A54" stroke-opacity="0.18" stroke-width="1"></line>
+              <line x1="96" y1="204" x2="304" y2="204" stroke="#8C6A54" stroke-opacity="0.18" stroke-width="1"></line>
+              <rect x="84" y="98" width="232" height="34" rx="6" fill="#8C6A54"></rect>
+              <rect x="188" y="98" width="24" height="146" fill="#FAF6F0"></rect>
+              <rect x="84" y="108" width="232" height="16" fill="#FAF6F0"></rect>
+              <path d="M200 108 C 172 88, 150 92, 152 112 C 154 128, 182 126, 200 108 Z" fill="#FAF6F0" stroke="#DCC9B6" stroke-width="1.5"></path>
+              <path d="M200 108 C 228 88, 250 92, 248 112 C 246 128, 218 126, 200 108 Z" fill="#FAF6F0" stroke="#DCC9B6" stroke-width="1.5"></path>
+              <circle cx="200" cy="109" r="8" fill="#DCC9B6" stroke="#8C6A54" stroke-width="1"></circle>
+              <line x1="196" y1="116" x2="176" y2="150" stroke="#8C6A54" stroke-width="1"></line>
+              <rect x="150" y="148" width="52" height="34" rx="2" fill="#DCC9B6" stroke="#8C6A54" stroke-width="1" transform="rotate(-8 176 165)"></rect>
+              <text x="176" y="169" transform="rotate(-8 176 165)" text-anchor="middle" font-family="Fraunces, serif" font-size="15" fill="#3A342E">CHC</text>
+            </svg>
+          </div>
+          <span class="gallery-caption accent">One teaser image — the rest stays a secret</span>
+        </div>
+
+        <div class="mini-info">
+          <span class="eyebrow accent">This month's edition</span>
+          <h3>The quiet hours edition</h3>
+          <div class="mini-meta">Five considered pieces · one seasonal theme</div>
+
+          <div class="mini-price-row">
+            <span class="mini-price">£34.99 / month</span>
+          </div>
+          <div class="mini-cadence">A brand new edition ships every month</div>
+          <div class="mini-discount-note">New here? Use code <strong>WELCOME10</strong> for 10% off your first box.</div>
+
+          <sc-if value="{{isOpen}}" hint-placeholder-val="{{true}}">
+            <div class="state-panel">
+              <div class="capacity-note">Open for orders · spaces remaining</div>
+              <button class="btn btn-block">Join this edition — £34.99/month</button>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{isSoldOut}}" hint-placeholder-val="{{false}}">
+            <div class="state-panel">
+              <p class="state-message">This edition is full. Pop your email below and we'll let you know as soon as the next one opens.</p>
+              <div class="email-capture">
+                <input type="email" placeholder="Your email address">
+                <button>Notify me</button>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{isClosed}}" hint-placeholder-val="{{false}}">
+            <div class="state-panel">
+              <p class="state-message">This edition is now closed. The next edition opens on the 1st of November. Pop your email below and we'll let you know the moment it's live.</p>
+              <div class="email-capture">
+                <input type="email" placeholder="Your email address">
+                <button>Notify me</button>
+              </div>
+            </div>
+          </sc-if>
+
+          <a href="#" class="see-details">See full details &amp; how it works</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cycle-strip block">
+    <div class="wrap">
+      <div class="section-heading">
+        <h2>How each edition moves</h2>
+      </div>
+      <div class="cycle-steps">
+        <div class="cycle-step"><span class="num">1st</span>Edition opens</div>
+        <div class="cycle-step"><span class="num">15th</span>Orders close</div>
+        <div class="cycle-step"><span class="num">16th</span>Renewal locks in for next month</div>
+        <div class="cycle-step"><span class="num">1st–7th</span>Ships next month</div>
+      </div>
+      <div class="cycle-more"><a href="#">More in our FAQ</a></div>
+    </div>
+  </section>
+
+  <section class="story block">
+    <div class="wrap">
+      <p>Cosy Home Club started with a simple idea — that a home should change gently with the seasons, without you having to hunt for what's next. Each month we choose a theme, gather a small set of pieces around it, and send it your way.</p>
+      <a href="#">Read our story</a>
+    </div>
+  </section>
+
+  <div class="trust-row">
+    <span>Cancel any time</span>
+    <span>No long tie-in</span>
+    <span>Delivered across the UK &amp; Ireland</span>
+  </div>
+
+  <section class="newsletter block">
+    <div class="wrap">
+      <h2>Stay in the loop</h2>
+      <p>Hear about each new theme as soon as it's revealed.</p>
+      <div class="email-capture">
+        <input type="email" placeholder="Your email address">
+        <button>Sign up</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site">
+    <div class="wrap">
+      Cosy Home Club — a UK monthly home-styling membership.
+      <br>
+      <a href="#">Terms</a> · <a href="#">Privacy</a> · <a href="#">Shipping &amp; returns</a>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{"state":{"editor":"enum","default":"open","options":["open","sold-out","closed"],"section":"Subscribe section"}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const state = this.props.state ?? 'open';
+    return {
+      isOpen: state === 'open',
+      isSoldOut: state === 'sold-out',
+      isClosed: state === 'closed'
+    };
+  }
+}
+</script>
+</body>
+</html>
