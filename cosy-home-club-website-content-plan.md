@@ -119,8 +119,9 @@ Sections:
 - Current edition teaser — theme name/mood only, respects state logic
   above, links to product page
 - Brand story snippet — short, warm, 2–3 sentences, links to About
-- Trust / reassurance row — cancel any time, no long tie-in, cancel
-  before the 16th to stop next month's edition, UK-based
+- Trust / reassurance row — no long tie-in, UK-based, links to the
+  cancelling detail on How membership works rather than stating the
+  16th cutoff inline
 - Email capture (always available, not just in closed state)
 - Footer nav to all pages + legal
 
@@ -131,10 +132,10 @@ logic in §3. See `product-page-mockup.html` for layout reference.
 
 Content per state:
 - **Open**: theme name/mood, "five considered pieces, one seasonal
-  theme"-style category count, price (£34.99/month), cadence note
-  ("ships monthly, first week of the month · cancel before the 16th to
-  stop next month's edition"), capacity remaining if shown, primary CTA
-  to subscribe via Shopify selling plan.
+  theme"-style category count, price (£34.99/month), cadence note ("a
+  brand new edition ships every month" — no cancellation detail inline;
+  that lives in the cancelling subsection), capacity remaining if shown,
+  primary CTA to subscribe via Shopify selling plan.
 - **Sold out**: same theme framing, no CTA, plain "this edition is full"
   statement, email capture for next edition.
 - **Closed between editions**: forward-looking copy per §3 exactly, email
