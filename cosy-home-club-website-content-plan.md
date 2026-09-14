@@ -36,9 +36,10 @@ Every edition follows a fixed monthly cycle:
 
 1. **Opens** on the 1st of the month.
 2. **Orders close** on the 15th.
-3. **Renewal / demand-lock** on the 16th — Cosy Home Club finalises stock
-   and production against confirmed orders.
-4. **Ships** on the 1st of the following month.
+3. **Renewal / demand-lock** on the 16th — renewals lock in for the
+   *following* month's edition, and Cosy Home Club finalises stock and
+   production against confirmed orders.
+4. **Ships** in the first week of the following month.
 
 This cycle drives three distinct product states across the Shop and
 product pages — never a simple "buy / sold out" binary:

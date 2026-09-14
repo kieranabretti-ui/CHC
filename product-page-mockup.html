@@ -125,7 +125,7 @@
   }
 
   .gallery-main {
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 4 / 3;
     background: var(--stone);
     border: 1px solid var(--line);
     border-radius: 4px;
@@ -137,18 +137,6 @@
     font-style: italic;
     font-size: 18px;
     text-align: center;
-  }
-  .gallery-thumbs {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  .gallery-thumbs div {
-    flex: 1;
-    aspect-ratio: 1 / 1;
-    background: var(--cream);
-    border: 1px solid var(--line);
-    border-radius: 4px;
   }
 
   .eyebrow {
@@ -367,10 +355,7 @@
 
   <div class="product">
     <div class="gallery">
-      <div class="gallery-main">Edition imagery<br />(placeholder)</div>
-      <div class="gallery-thumbs">
-        <div></div><div></div><div></div><div></div>
-      </div>
+      <div class="gallery-main">One teaser image<br />— the rest stays a secret</div>
     </div>
 
     <div class="product-info">
@@ -382,7 +367,7 @@
         <span class="price">£XX / month</span>
         <span class="tbc">price TBC</span>
       </div>
-      <div class="cadence">Ships monthly · cancel anytime</div>
+      <div class="cadence">Ships monthly, first week of the month · cancel anytime</div>
 
       <p class="description">
         A slow, settling theme for the start of the season — five pieces
@@ -426,8 +411,9 @@
         <details class="details-item">
           <summary>How the monthly cycle works</summary>
           <p>Each edition opens on the 1st, orders close on the 15th, and
-          boxes ship on the 1st of the following month. <a href="#">Read
-          the full breakdown</a>.</p>
+          renewals lock in for the following month's edition on the 16th.
+          Boxes ship in the first week of that following month.
+          <a href="#">Read the full breakdown</a>.</p>
         </details>
         <details class="details-item">
           <summary>What's inside</summary>
@@ -454,8 +440,8 @@
     <div class="cycle-steps">
       <div class="cycle-step"><span class="num">1st</span>Edition opens</div>
       <div class="cycle-step"><span class="num">15th</span>Orders close</div>
-      <div class="cycle-step"><span class="num">16th</span>Renewal locks in</div>
-      <div class="cycle-step"><span class="num">1st</span>Ships next month</div>
+      <div class="cycle-step"><span class="num">16th</span>Renewal locks in for next month</div>
+      <div class="cycle-step"><span class="num">1st–7th</span>Ships next month</div>
     </div>
   </div>
 </div>
