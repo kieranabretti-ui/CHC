@@ -183,14 +183,20 @@ Sections:
 
 ### 6.5 FAQ
 
-**Purpose**: answer practical questions, reduce support load.
+**Purpose**: answer practical questions, reduce support load. See
+`faq-page-mockup.html` for layout reference — category jump nav, an
+accordion per question, and a contact CTA at the bottom.
 
-Suggested categories (content **TBC** pending skip-a-month policy
-confirmation; pricing and cancellation are confirmed, see §3):
-- Ordering & the monthly cycle
-- Pricing & billing
-- Skipping / pausing / cancelling
-- Shipping & delivery
+Categories, with confirmed answers written and unconfirmed ones marked
+with a visible "answer pending" flag rather than invented copy:
+- Ordering & the monthly cycle — confirmed (cycle mechanics, sell-out
+  behaviour)
+- Pricing & billing — price confirmed (£34.99/month); billing timing and
+  multi-month discount pending
+- Skipping / pausing / cancelling — cancellation confirmed (see §3);
+  skip-a-month policy and refunds on a locked order pending
+- Shipping & delivery — ship timing confirmed (first week of the month);
+  delivery region pending
 - Returns
 - What's actually inside (mystery-rule-compliant answer — confirms the
   surprise, states category count only)
