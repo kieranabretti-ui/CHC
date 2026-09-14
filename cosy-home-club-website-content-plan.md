@@ -109,20 +109,29 @@ omission — copy review should flag any accidental specificity.
 
 ### 6.1 Home
 
-**Purpose**: introduce the membership, set the tone, funnel to the Shop
-page (or to email capture if the edition is closed).
+**Purpose**: introduce the membership, and let people subscribe directly
+from the page — not just funnel to the Shop page. See
+`home-page-mockup.html` for layout reference.
 
 Sections:
-- Hero — Fraunces headline, one-line description, primary CTA ("see this
-  month's edition" or, in closed state, "join the waitlist")
-- How it works, condensed (3-step summary, links to full page)
-- Current edition teaser — theme name/mood only, respects state logic
-  above, links to product page
+- Hero — Fraunces headline, one-line description, primary CTA anchoring
+  down to the subscribe section
+- Subscribe section — a condensed version of the product page: single
+  teaser image, theme name/mood, category count, price, cadence line
+  ("a brand new edition ships every month"), and the *same three-state
+  logic* as the full product page (open/sold out/closed, including the
+  no-reference-to-the-closed-edition rule). No accordion — a "see full
+  details & how it works" link goes to the product page for that.
+- How the cycle moves, condensed — the same 4-step strip as the product
+  page (opens/closes/locks/ships), links to How membership works for
+  the full breakdown
 - Brand story snippet — short, warm, 2–3 sentences, links to About
 - Trust / reassurance row — no long tie-in, UK-based, links to the
   cancelling detail on How membership works rather than stating the
   16th cutoff inline
-- Email capture (always available, not just in closed state)
+- General newsletter signup ("stay in the loop") — always available,
+  distinct in purpose from the state-driven "notify me" capture inside
+  the subscribe section (sold out / closed states only)
 - Footer nav to all pages + legal
 
 ### 6.2 Shop / product page
