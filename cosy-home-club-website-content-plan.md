@@ -66,7 +66,9 @@ but it does stop billing for the edition after that.
 feedback instead — if unhappy with a piece, contact
 `hello@cosyhomeclub.co.uk`.
 
-**Contact**: email only (`hello@cosyhomeclub.co.uk`), no contact form.
+**Contact**: a simple form (name, email, message) on the Contact page,
+with `hello@cosyhomeclub.co.uk` given as a direct alternative for anyone
+who'd rather email straight away.
 
 **Discount**: no multi-month or subscription-length discount. New
 members get 10% off their first box with the code `WELCOME10`.
@@ -226,11 +228,15 @@ were still open):
 
 ### 6.5 Contact
 
-**Purpose**: simple contact path.
+**Purpose**: simple contact path. See `contact-page-mockup.html` for
+layout reference.
 
 Sections:
-- Email only, via `mailto:hello@cosyhomeclub.co.uk` — no contact form
-- Response-time expectation (plain, no urgency language)
+- A simple form — name, email, message, single submit button
+- Direct email alternative below the form (`hello@cosyhomeclub.co.uk`)
+- Response-time expectation — left unstated for now rather than
+  inventing a specific SLA (e.g. "within two working days"); add once
+  confirmed
 - Link back to FAQ for common questions
 
 ### 6.6 Legal (placeholders)
@@ -243,5 +249,7 @@ until real legal copy is supplied. Do not draft binding legal terms.
 - **Capacity numbers**: units per edition that trigger "sold out" state.
 - **About page team/founder note**: any bio or "who's behind this"
   content, or leave it out entirely.
+- **Contact response-time expectation**: e.g. "within two working days"
+  — left unstated on the Contact page until confirmed.
 - **Legal pages**: real copy for terms, privacy, shipping & returns, and
   subscription terms (placeholders only for now, not blocking).
